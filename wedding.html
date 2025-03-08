@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Our Wedding</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <!-- Smoke reveal effect -->
+    <div class="smoke-container">
+        <div class="smoke-left"></div>
+        <div class="smoke-right"></div>
+    </div>
+
+    <!-- Particles effect -->
+    <div class="particles"></div>
+
+    <!-- Falling Rose Petals -->
+    <div class="petals-container">
+        <div class="petal small"></div>
+        <div class="petal medium"></div>
+        <div class="petal large"></div>
+        <div class="petal small"></div>
+        <div class="petal medium"></div>
+        <div class="petal large"></div>
+        <div class="petal small"></div>
+        <div class="petal medium"></div>
+        <div class="petal large"></div>
+        <div class="petal small"></div>
+        <div class="petal medium"></div>
+        <div class="petal large"></div>
+        <div class="petal small"></div>
+        <div class="petal medium"></div>
+        <div class="petal large"></div>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <div class="nav-dot" data-section="header"></div>
+        <div class="nav-dot" data-section="details"></div>
+        <div class="nav-dot" data-section="schedule"></div>
+        <div class="nav-dot" data-section="countdown"></div>
+        <div class="nav-dot" data-section="love-story"></div>
+        <div class="nav-dot" data-section="gallery"></div>
+        <div class="nav-dot" data-section="location"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">↑</div>
+
+    <div class="container fade-in content-reveal">
+        <section id="header">
+            <div class="header-content">
+                <div class="save-the-date">Save The Date</div>
+                <div class="couple-names">Thành Công  &  Diễm Quỳnh</div>
+                <img src="images/couple.png" alt="Ảnh cặp đôi" class="couple-image">
+                <div class="wedding-date-info">
+                    <div class="date-row">
+                        <div class="time-info">17:00</div>
+                        <div class="date-number">23.11</div>
+                        <div class="time-info">Thứ 7</div>
+                    </div>
+                    <div class="location-info">(Nhằm Ngày 23 Tháng 10 Năm Giáp Thìn)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="details">
+            
+            <div class="reception-details">
+                <h2>Tiệc Cưới</h2>
+                <p>Được tổ chức vào hồi</p>
+                <p>17 giờ 30 phút</p>
+                <p>Tại:</p>
+                <p>[Tên Nhà Hàng/Trung Tâm Tiệc Cưới]</p>
+                <p>[Địa chỉ đầy đủ]</p>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <h2>Chương Trình</h2>
+            <div class="schedule-container">
+                <div class="schedule-item">
+                    <div class="schedule-time">09:30</div>
+                    <p>Đón khách tại tư gia nhà trai</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">10:00</div>
+                    <p>Lễ thành hôn</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">17:30</div>
+                    <p>Đón tiếp quan khách</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">18:00</div>
+                    <p>Tiệc cưới</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="countdown" class="countdown">
+            <h2>Đếm ngược tới ngày hạnh phúc</h2>
+            <div id="timer">Loading...</div>
+        </section>
+
+        <section id="love-story" class="love-story">
+            <h2>Câu Chuyện Tình Yêu</h2>
+            <p>Hãy chia sẻ câu chuyện tình yêu của bạn ở đây...</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-item">
+                <img src="images/couple-1.jpg" alt="Ảnh cặp đôi 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/couple-2.jpg" alt="Ảnh cặp đôi 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/couple-3.jpg" alt="Ảnh cặp đôi 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/couple-4.jpg" alt="Ảnh cặp đôi 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/couple-5.jpg" alt="Ảnh cặp đôi 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/couple-6.jpg" alt="Ảnh cặp đôi 6">
+            </div>
+        </section>
+
+        <section id="location" class="map-container">
+            <h2>Địa Điểm</h2>
+            <div class="map-sections-wrapper">
+                <div class="map-section">
+                    <h3>Nhà trai</h3>
+                    <div class="map-address">
+                        <p>Khu tập thể số 6 thăng long, Hải Bối , Đông Anh , Hà Nội</p>
+                    </div>
+                    <iframe class="map-frame" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2753607210443!2d105.77520509061578!3d21.14143723372352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134ff4192fbdb9f%3A0x78176b9f48701baf!2zS2h1IHNpbmggdGjDoWkgVsaw4budbiBYdcOibg!5e0!3m2!1svi!2s!4v1741412483166!5m2!1svi!2s" width="600" height="450" style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://www.google.com/maps/place/Khu+sinh+th%C3%A1i+V%C6%B0%E1%BB%9Dn+Xu%C3%A2n/@21.1414372,105.7752051,17z/data=!3m1!4b1!4m6!3m5!1s0x3134ff4192fbdb9f:0x78176b9f48701baf!8m2!3d21.1414323!4d105.780076!16s%2Fg%2F11m7n410p8?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" 
+                       target="_blank" 
+                       class="map-button">
+                        Chỉ Đường đến nhà trai
+                    </a>
+                </div>
+
+                <div class="map-section">
+                    <h3>Nhà gái</h3>
+                    <div class="map-address">
+                        <p>Đông Quang, Đông Hưng, Thái Bình</p>
+                    </div>
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0973016630973!2d105.84991167607567!3d21.028774580619247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab95388880b5%3A0x55f8c0959cc37741!2zNDggUC4gQuG6p3UgR-G7lywgSMOgbmcgQuG6oWMsIEhvw6BuIEtp4bq_bSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709908493431!5m2!1svi!2s"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.google.com/?q=48+Cầu+Gỗ,+Hàng+Bạc,+Hoàn+Kiếm,+Hà+Nội" 
+                       target="_blank" 
+                       class="map-button">
+                        Chỉ Đường đến nhà gái
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Simple countdown timer
+        function updateTimer() {
+            const weddingDate = new Date('2024-12-12').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                document.getElementById('timer').innerHTML = "Chúc mừng ngày trọng đại! ❤️";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('timer').innerHTML = `${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`;
+        }
+
+        // Update timer immediately and then every second
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force scroll to top on page load
+            window.scrollTo(0, 0);
+            document.body.style.overflow = 'hidden'; // Lock scrolling
+
+            // After smoke animation and content reveal (2.5s total)
+            setTimeout(() => {
+                document.body.style.overflow = ''; // Enable scrolling
+            }, 2500);
+
+            const scrollButton = document.querySelector('.scroll-top');
+            const navDots = document.querySelectorAll('.nav-dot');
+            const sections = document.querySelectorAll('section');
+
+            // Intersection Observer for gallery animation
+            const galleryObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const galleryItems = entry.target.querySelectorAll('.gallery-item');
+                        galleryItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.classList.add('animate');
+                            }, index * 200);
+                        });
+                        galleryObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            // Observe gallery section
+            const gallerySection = document.querySelector('#gallery');
+            if (gallerySection) {
+                galleryObserver.observe(gallerySection);
+            }
+
+            // Show/hide scroll button and update nav dots
+            window.addEventListener('scroll', () => {
+                // Scroll button visibility
+                if (window.scrollY > 300) {
+                    scrollButton.classList.add('visible');
+                } else {
+                    scrollButton.classList.remove('visible');
+                }
+                
+                // Update active nav dot
+                let currentSection = '';
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= sectionTop - 200) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navDots.forEach(dot => {
+                    dot.classList.remove('active');
+                    if (dot.getAttribute('data-section') === currentSection) {
+                        dot.classList.add('active');
+                    }
+                });
+            });
+
+            // Scroll to top when button is clicked
+            scrollButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Navigation dots click handling
+            navDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const sectionId = dot.getAttribute('data-section');
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

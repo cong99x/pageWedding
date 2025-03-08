@@ -1,0 +1,1224 @@
+/* Full screen sections */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+section {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    scroll-margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+/* Section specific styles */
+#header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdf1f3;
+}
+
+#details, #schedule, #countdown, #love-story, #gallery, #location { 
+    background: #fdf1f3;
+}
+
+/* Container adjustments */
+.container section {
+    margin: 0;
+    padding: 30px;
+    min-height: auto;
+    width: auto;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d4728f;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 30px 0;
+}
+
+/* Header section styles */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.save-the-date {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2em;
+    color: #d4728f;
+    margin-bottom: 15px;
+}
+
+.couple-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8em;
+    color: #333;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.couple-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 25px 0;
+    background: transparent;
+    padding: 10px;
+    box-shadow: none;
+}
+
+.wedding-date-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: transparent;
+    position: relative;
+}
+
+.date-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.date-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4728f, transparent);
+}
+
+.date-row::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4728f, transparent);
+}
+
+.time-info {
+    font-size: 1.6em;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.date-number {
+    font-size: 1.8em;
+    color: #d4728f;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 0 20px;
+}
+
+.date-number::before,
+.date-number::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 20px;
+    background: #d4728f;
+    transform: translateY(-50%);
+}
+
+.date-number::before {
+    left: 0;
+}
+
+.date-number::after {
+    right: 0;
+}
+
+.location-info {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    font-style: normal;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Details section */
+.details {
+    margin: 40px 0;
+    line-height: 1.8;
+}
+
+.ceremony-details, .reception-details {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.details h2 { margin-bottom: 30px; }
+
+.details p {
+    font-size: 1.2em;
+    line-height: 2;
+    margin: 15px 0;
+}
+
+/* Schedule section */
+.schedule {
+    margin: 40px 0;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.schedule-item {
+    margin: 25px 0;
+    padding: 25px;
+    border-left: 3px solid #d4728f;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.schedule-item:hover {
+    transform: translateX(10px);
+}
+
+.schedule-time {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #d4728f;
+}
+
+/* Countdown section */
+.countdown {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 30px 0;
+    color: #d4728f;
+}
+
+#timer {
+    font-size: 1.8em;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* Love story section */
+.love-story {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.love-story h2 {
+    margin: 0;
+}
+
+.love-story p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 114, 143, 0.2);
+}
+
+.love-story p:last-child {
+    border-bottom: none;
+}
+
+/* Gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(30px) scale(0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item.animate {
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.gallery-item:nth-child(1) { animation-delay: 0.2s; }
+.gallery-item:nth-child(2) { animation-delay: 0.4s; }
+.gallery-item:nth-child(3) { animation-delay: 0.6s; }
+.gallery-item:nth-child(4) { animation-delay: 0.8s; }
+.gallery-item:nth-child(5) { animation-delay: 1.0s; }
+.gallery-item:nth-child(6) { animation-delay: 1.2s; }
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1);
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .container section {
+        padding: 20px;
+    }
+
+    .header-content {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2.8em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    .save-the-date {
+        font-size: 2.2em;
+    }
+
+    .couple-names {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .couple-image {
+        max-width: 250px;
+        margin: 15px 0;
+    }
+
+    .date-row {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .time-info {
+        font-size: 1.1em;
+    }
+
+    .date-number {
+        font-size: 1.3em;
+    }
+
+    .location-info {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .ceremony-details, .reception-details {
+        margin: 20px 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .details {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .details p, .love-story p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        padding: 15px;
+    }
+
+    .schedule-item {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .schedule-time {
+        font-size: 1.2em;
+    }
+
+    .countdown {
+        gap: 20px;
+    }
+
+    #timer {
+        font-size: 1.4em;
+        padding: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .map-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .map-container h2 {
+        font-size: 2.8em;
+        margin: 0 0 25px 0;
+        padding-bottom: 15px;
+        white-space: nowrap;
+    }
+
+    .map-sections-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 20px auto 0;
+    }
+
+    .map-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .map-section h3 {
+        font-size: 2em;
+        margin: 8px 0;
+        min-height: 50px;
+        white-space: nowrap;
+    }
+
+    .map-frame {
+        height: 220px;
+        margin: 5px 0;
+    }
+
+    .map-frame iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .map-address {
+        font-size: 1em;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .map-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        width: 80%;
+        text-align: center;
+    }
+
+    .nav-dots {
+        display: none;
+    }
+
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .flower-particle, .rose, .petal {
+        display: block;
+        transform-origin: center;
+    }
+
+    .flower-particle::before {
+        font-size: 20px;
+    }
+
+    .flower-particle.large::before {
+        font-size: 25px;
+    }
+
+    .flower-particle.small::before {
+        font-size: 15px;
+    }
+
+    .rose::before {
+        font-size: 25px;
+    }
+
+    .rose.large::before {
+        font-size: 30px;
+    }
+
+    .rose.medium::before {
+        font-size: 25px;
+    }
+
+    .rose.small::before {
+        font-size: 20px;
+    }
+
+    .petal::before {
+        font-size: 20px;
+    }
+
+    .petal.large::before {
+        font-size: 25px;
+    }
+
+    .petal.medium::before {
+        font-size: 22px;
+    }
+
+    .petal.small::before {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .container section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .save-the-date {
+        font-size: 1.8em;
+    }
+
+    .couple-names {
+        font-size: 1.6em;
+    }
+
+    .couple-image {
+        max-width: 200px;
+    }
+
+    .time-info {
+        font-size: 1em;
+    }
+
+    .date-number {
+        font-size: 1.1em;
+        padding: 0 10px;
+    }
+
+    .details p, .love-story p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .schedule-time {
+        font-size: 1.1em;
+    }
+
+    #timer {
+        font-size: 1.2em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item {
+        height: 180px;
+    }
+
+    .map-container h2 {
+        font-size: 2.2em;
+        margin: 0 0 20px 0;
+        white-space: nowrap;
+        letter-spacing: -0.5px;
+    }
+
+    .map-section h3 {
+        font-size: 1.8em;
+        min-height: 40px;
+        padding: 0 5px;
+        white-space: nowrap;
+        letter-spacing: -0.5px;
+    }
+
+    .map-frame {
+        height: 200px;
+        margin: 3px 0;
+    }
+
+    .map-frame iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .map-button {
+        width: 90%;
+        padding: 8px 16px;
+    }
+
+    .ceremony-details, .reception-details {
+        margin: 15px 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .details {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .flower-particle::before {
+        font-size: 15px;
+    }
+
+    .flower-particle.large::before {
+        font-size: 20px;
+    }
+
+    .flower-particle.small::before {
+        font-size: 12px;
+    }
+
+    .rose::before {
+        font-size: 20px;
+    }
+
+    .rose.large::before {
+        font-size: 25px;
+    }
+
+    .rose.medium::before {
+        font-size: 20px;
+    }
+
+    .rose.small::before {
+        font-size: 15px;
+    }
+
+    .petal::before {
+        font-size: 15px;
+    }
+
+    .petal.large::before {
+        font-size: 20px;
+    }
+
+    .petal.medium::before {
+        font-size: 18px;
+    }
+
+    .petal.small::before {
+        font-size: 15px;
+    }
+}
+
+/* Map section */
+.map-container {
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container h2 {
+    width: 100%;
+    display: block;
+    margin: 0 0 30px 0;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.map-sections-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.map-section {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
+.map-section h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #d4728f;
+    font-size: 2.5em;
+    margin: 10px 0;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.map-frame {
+    width: 100%;
+    height: 280px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px 0;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.map-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    display: block;
+}
+
+.map-address {
+    margin: 8px 0;
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.5;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4728f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    width: auto;
+    min-width: 140px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .map-sections-wrapper {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .map-section {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-sections-wrapper {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .map-section {
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Navigation elements */
+.nav-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(212, 114, 143, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-dot:hover, .nav-dot.active {
+    background-color: #d4728f;
+    transform: scale(1.2);
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 114, 143, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(100px);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background-color: #c25f7c;
+}
+
+/* Animations */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Smoke reveal animation */
+.smoke-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.smoke-left, .smoke-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 192, 203, 0.9), rgba(255, 192, 203, 0.3));
+    animation: smokeReveal 2s ease-in-out forwards;
+}
+
+.smoke-left {
+    left: 0;
+    transform-origin: left center;
+}
+
+.smoke-right {
+    right: 0;
+    transform-origin: right center;
+    background: linear-gradient(to left, rgba(255, 192, 203, 0.9), rgba(255, 192, 203, 0.3));
+}
+
+/* Content reveal animation */
+.content-reveal {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: contentReveal 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+/* Particle effects */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 192, 203, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleFloat 6s ease-in-out infinite;
+}
+
+/* Flower particles */
+.flower-particle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 999;
+    animation: flowerFloat 8s linear infinite;
+}
+
+.flower-particle::before {
+    content: '🌸';
+    font-size: 30px;
+    position: absolute;
+    animation: flowerRotate 4s linear infinite;
+}
+
+.flower-particle.large::before { font-size: 40px; }
+.flower-particle.small::before { font-size: 20px; }
+
+/* Rose particles */
+.rose-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 998;
+}
+
+.rose {
+    position: absolute;
+    bottom: -50px;
+    pointer-events: none;
+    animation: roseFloat 10s linear infinite;
+    opacity: 0;
+}
+
+.rose::before {
+    content: '🌹';
+    font-size: 40px;
+    position: absolute;
+    animation: roseRotate 8s linear infinite;
+}
+
+.rose.variant-1::before { content: '🌹'; }
+.rose.variant-2::before { content: '⚘'; }
+.rose.variant-3::before { content: '🥀'; }
+.rose.variant-4::before { content: '🌷'; }
+
+.rose.small::before {
+    font-size: 25px;
+    filter: hue-rotate(30deg);
+}
+
+.rose.medium::before {
+    font-size: 35px;
+    filter: hue-rotate(15deg);
+}
+
+.rose.large::before {
+    font-size: 45px;
+    filter: hue-rotate(-15deg);
+}
+
+/* Rose petals */
+.petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.petal {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: petalFall var(--fall-duration) linear infinite;
+    animation-delay: var(--fall-delay);
+    left: var(--start-position);
+}
+
+.petal:nth-child(1) { --fall-duration: 8s; --fall-delay: 0s; --start-position: 15%; }
+.petal:nth-child(2) { --fall-duration: 12s; --fall-delay: 1s; --start-position: 35%; }
+.petal:nth-child(3) { --fall-duration: 9s; --fall-delay: 2s; --start-position: 65%; }
+.petal:nth-child(4) { --fall-duration: 11s; --fall-delay: 0.5s; --start-position: 85%; }
+.petal:nth-child(5) { --fall-duration: 10s; --fall-delay: 1.5s; --start-position: 25%; }
+.petal:nth-child(6) { --fall-duration: 13s; --fall-delay: 2.5s; --start-position: 75%; }
+.petal:nth-child(7) { --fall-duration: 7s; --fall-delay: 0.7s; --start-position: 45%; }
+.petal:nth-child(8) { --fall-duration: 14s; --fall-delay: 1.8s; --start-position: 95%; }
+.petal:nth-child(9) { --fall-duration: 11s; --fall-delay: 2.2s; --start-position: 5%; }
+.petal:nth-child(10) { --fall-duration: 9s; --fall-delay: 0.3s; --start-position: 55%; }
+.petal:nth-child(11) { --fall-duration: 12s; --fall-delay: 1.2s; --start-position: 30%; }
+.petal:nth-child(12) { --fall-duration: 10s; --fall-delay: 2.7s; --start-position: 70%; }
+.petal:nth-child(13) { --fall-duration: 8s; --fall-delay: 0.9s; --start-position: 20%; }
+.petal:nth-child(14) { --fall-duration: 13s; --fall-delay: 1.6s; --start-position: 80%; }
+.petal:nth-child(15) { --fall-duration: 11s; --fall-delay: 2.3s; --start-position: 40%; }
+
+.petal::before {
+    content: '🌸';
+    font-size: 25px;
+    position: absolute;
+    animation: petalRotate 3s ease-in-out infinite;
+}
+
+.petal.large::before {
+    font-size: 35px;
+}
+
+.petal.medium::before {
+    font-size: 30px;
+}
+
+.petal.small::before {
+    font-size: 20px;
+}
+
+@keyframes petalFall {
+    0% {
+        transform: translate(0, -10%) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translate(20px, 10vh) rotate(45deg);
+    }
+    25% {
+        transform: translate(-15px, 25vh) rotate(90deg);
+    }
+    50% {
+        transform: translate(15px, 50vh) rotate(180deg);
+    }
+    75% {
+        transform: translate(-20px, 75vh) rotate(270deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes petalRotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    33% {
+        transform: rotate(120deg) scale(0.8);
+    }
+    66% {
+        transform: rotate(240deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Keyframe Animations */
+@keyframes smokeReveal {
+    0% {
+        transform: scaleX(1);
+        filter: blur(0px);
+    }
+    100% {
+        transform: scaleX(0);
+        filter: blur(10px);
+    }
+}
+
+@keyframes contentReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes flowerFloat {
+    0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flowerRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes roseFloat {
+    0% {
+        transform: translateY(100vh) translateX(-20px) rotate(0deg);
+        opacity: 0;
+    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% {
+        transform: translateY(-20vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes roseRotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
